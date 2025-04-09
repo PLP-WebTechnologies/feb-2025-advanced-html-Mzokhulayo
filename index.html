@@ -38,7 +38,160 @@
             </figure>
         </section>
 
+        <section>
+            <h2>Contact Lists</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Andile Xulu</td>
+                        <td>123 Main st, Johanesburg, GP</td>
+                        <td>0812657845</td>
+                        <td>andile.x@somemail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Sizwe Zwane</td>
+                        <td>25 Park Ave, CapeTown, CP</td>
+                        <td>0659812545</td>
+                        <td>sizwe.z@somebody.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bantu Mbhatha</td>
+                        <td>25 Dilomite Ave, CapeTown, CP</td>
+                        <td>0714685486</td>
+                        <td>bantu.m@somebody.com</td>
+                    </tr>
+                    <tr>
+                        <td>Robert Wilson</td>
+                        <td>101 Pine st, San Fransisco, CA</td>
+                        <td>555-456-7890</td>
+                        <td>robert.w@somebody.com</td>
+                    </tr>
+                    <tr>
+                        <td>Thuli Nxumalo</td>
+                        <td>34 culross on Main, Bryanston, Gp</td>
+                        <td>0876955536</td>
+                        <td>thuli.N@somebody.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section>
+            <h2>Registration Form</h2>
+            <form id="registration-form" action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Adress:</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="create passowrd"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain atleast one number and one uppercase and lowercase letter and at least 8 or more characters"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birth-date">Date of Birth:</label>
+                        <input type="date" id="birth-date" name="birth-date" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="">-- Select a country --</option>
+                            <option value="">United States</option>
+                            <option value="">Canada</option>
+                            <option value="">South Africa</option>
+                            <option value="">Kenya</option>
+                            <option value="">Japan</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Gender:</p>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+
+                        <input type="radio" id="non-binary" name="gender" value="non-binary">
+                        <label for="non-binary">Non-binary</label><br>
+
+                        <input type="radio" id="prefer-not" name="gender" value="prefer-not">
+                        <label for="prefer-not">Prefer not to say</label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Areas of Interest:</p>
+                        <input type="checkbox" id="webdev" name="interests" value="webdev">
+                        <label for="webdev">Web Development</label><br>
+
+                        <input type="checkbox" id="mobile" name="interests" value="mobile">
+                        <label for="mobile">Mobile Development</label><br>
+
+                        <input type="checkbox" id="data" name="interests" value="data">
+                        <label for="data">Data Science</label><br>
+
+                        <input type="checkbox" id="ai" name="interests" value="ai">
+                        <label for="ai">Artificial Intelligence</label><br>
+
+                        <input type="checkbox" id="cloud" name="interests" value="cloud">
+                        <label for="cloud">Cloud Computing</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea name="comments" id="comments" rows="4" placeholder="Any additional comments or question"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                </div>
+
+                <button type="submit">Register</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+
+        <section class="multimedia-section">
+            <h2>Multimedia Examples</h2>
+
+            <h3>Audio Player</h3>
+            <audio controls>
+                <source src="http://soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browber does not support the audio element
+            </audio>
+
+            <h3>Video Player</h3>
+            <video width="320" height="240" controls>
+                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                Your browser does not support video tag
+            </video>
+        </section>
     </main>  
+    <footer>
+        <p>&copy; 2025 Advanced HTML5 Elements and Forms| Created for PLP week 2 webdev.</p>
+    </footer>
 </body>
 </html>
